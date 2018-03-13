@@ -1,5 +1,5 @@
 #
-# Apple/Slots Attempt 1
+# Apple/Slots
 #
 print("Welcome to the Slot Machine Simulator")
 print("To win the jackpot you need to have 3 cherries in a row.")
