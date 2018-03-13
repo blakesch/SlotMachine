@@ -11,7 +11,7 @@ if int(games)<1 :
     print ("You didn't deserve to play anyway!")
 if int(games)>100 :
     print ("Sorry you can only play 100 games so 100 is all you get!")
-    games = 10025
+    games = 100
 def play():
     slot1=choice (slotsPossible)
     slot2=choice (slotsPossible)
