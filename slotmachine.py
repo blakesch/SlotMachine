@@ -18,13 +18,13 @@ def play():
     slot3=choice (slotsPossible)
     win = ""
     if(slot1==slot2==slot3=="cherry"):
-        win = "\n\nYou're a big winner! Nice! $500!\n"
+        win = "\n\nJackpot! You're a big winner! $500!\n"
     if(slot1==slot2==slot3=="crown"):
-        win = "\n\nYou're kind of a winner... Woot? $100\n"
+        win = "\n\nYou won $100!\n"
     if(slot1==slot2==slot3=="apple"):
-        win = "\n\nYou win an apple!\n"
+        win = "\n\nYou win a small prize: $10!\n"
     if(slot1==slot2==slot3=="lemon"):
-        win = "\n\nTime to make some lemonade I guess.\n"
+        win = "\n\nTime to make some lemonade!\n"
     return slot1+":"+slot2+":"+slot3+" "+win
 for i in range(int(games)) :
     print(play())
