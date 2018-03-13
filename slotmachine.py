@@ -11,20 +11,20 @@ if int(games)<1 :
     print ("You didn't deserve to play anyway!")
 if int(games)>100 :
     print ("Sorry you can only play 100 games so 100 is all you get!")
-    games = 100
+    games = 10025
 def play():
     slot1=choice (slotsPossible)
     slot2=choice (slotsPossible)
     slot3=choice (slotsPossible)
     win = ""
     if(slot1==slot2==slot3=="cherry"):
-        win = /n"You're a big winner! Nice! $500!"
+        win = "\n\nYou're a big winner! Nice! $500!\n"
     if(slot1==slot2==slot3=="crown"):
-        win = /n"You're kind of a winner... Woot? $100"
+        win = "\n\nYou're kind of a winner... Woot? $100\n"
     if(slot1==slot2==slot3=="apple"):
-        win = /n"You win an apple!"
+        win = "\n\nYou win an apple!\n"
     if(slot1==slot2==slot3=="lemon"):
-        win = /n"Time to make some lemonade I guess."
+        win = "\n\nTime to make some lemonade I guess.\n"
     return slot1+":"+slot2+":"+slot3+" "+win
 for i in range(int(games)) :
     print(play())
