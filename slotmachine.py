@@ -6,6 +6,7 @@ print("To win the jackpot you need to have 3 cherries in a row.")
 print("You can play up to 100 rounds at once. Select a number between 1 and 100")
 games = input("How many games would you like to run?")
 slotsPossible = ("apple", "apple", "apple", "cherry", "crown", "lemon")
+loser = ("\nYou win absolutely nothing", "\nFeed me more money", "\nYou lost, try again")
 from random import *
 if int(games)<1 :
     print ("You didn't deserve to play anyway!")
@@ -16,7 +17,8 @@ def play():
     slot1=choice (slotsPossible)
     slot2=choice (slotsPossible)
     slot3=choice (slotsPossible)
-    win = ""
+    lose = choice(loser)
+    win = lose
     if(slot1==slot2==slot3=="cherry"):
         win = "\n\nJackpot! You're a big winner! $500!\n"
     if(slot1==slot2==slot3=="crown"):
