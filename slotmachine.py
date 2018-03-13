@@ -3,7 +3,7 @@
 #
 print("Welcome to the Slot Machine Simulator")
 print("To win the jackpot you need to have 3 cherries in a row.")
-print("You can play up to 100 rounds at once. Select a number between 1 and 10")
+print("You can play up to 100 rounds at once. Select a number between 1 and 100")
 games = input("How many games would you like to run?")
 slotsPossible = ("apple", "apple", "apple", "cherry", "crown", "lemon")
 from random import *
@@ -18,13 +18,13 @@ def play():
     slot3=choice (slotsPossible)
     win = ""
     if(slot1==slot2==slot3=="cherry"):
-        win = "You're a big winner! Nice! $500!"
+        win = /n"You're a big winner! Nice! $500!"
     if(slot1==slot2==slot3=="crown"):
-        win = "You're kind of a winner... Woot? $100"
+        win = /n"You're kind of a winner... Woot? $100"
     if(slot1==slot2==slot3=="apple"):
-        win = "You win an apple!"
+        win = /n"You win an apple!"
     if(slot1==slot2==slot3=="lemon"):
-        win = "Time to make some lemonade I guess."
+        win = /n"Time to make some lemonade I guess."
     return slot1+":"+slot2+":"+slot3+" "+win
 for i in range(int(games)) :
     print(play())
